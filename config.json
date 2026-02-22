@@ -1,0 +1,6 @@
+{
+    "database_url": "sqlite:///./calorie_tracker.db",
+    "frontend_api_base_url": "http://localhost:8000/api",
+    "backend_host": "0.0.0.0",
+    "backend_port": 8000
+}

@@ -1,0 +1,18 @@
+--- frontend/src/pages/LogMeal.tsx
++++ frontend/src/pages/LogMeal.tsx
+@@ -7,2 +7,3 @@
+     const [error, setError] = useState('');
++    const [warning, setWarning] = useState('');
+     const [loading, setLoading] = useState(false);
+@@ -107,2 +108,6 @@
+             });
++            if (res.warning) {
++                setWarning(res.warning);
++            } else {
++                setWarning('');
++            }
+@@ -131,2 +136,7 @@
+             {error && <div style={{ color: 'var(--color-fat)', padding: '0.5rem', border: '1px solid var(--color-fat)', borderRadius: '4px', textAlign: 'center', marginBottom: '1rem' }}>{error}</div>}
++            {warning && <div style={{ color: 'var(--accent-warning)', padding: '0.75rem', backgroundColor: 'rgba(255, 170, 0, 0.1)', border: '1px solid var(--accent-warning)', borderRadius: '4px', marginBottom: '1rem', fontSize: '0.9rem' }}>
++                <strong>⚠️ Warning:</strong> {warning}
++            </div>}
