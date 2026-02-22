@@ -2,6 +2,11 @@
 
 A modern, full-stack web application for tracking personal health goals and nutrition, powered by AI.
 
+## Validation Video
+
+Please review the attached session to see me acting as the LLM interface testing the Application, viewing inputs, and loading the PDF screens sequentially!
+
+![Browser Recording](./media/calorie_tracker_walkthrough_1771784388459.webp)
 ## Features Built
 1. **Multi-User Dashboards:** Private data isolation across goals, meals, and reports.
 2. **AI Meal Scanner:** Upload a photo of food to magically extract nutritional estimates and macros (Google Gemini or free open HuggingFace fallback).
@@ -84,8 +89,3 @@ To accommodate users migrating data or managing spreadsheets, I created a robust
 *   **Regex Tabular Matching:** The Python parser processes every line of the document looking for exactly structured grids in the format: `YYYY-MM-DD | MealType | Food Name | Calories | Macros...`.
 *   **Batch Imports:** As rows are extracted, they are verified and batch-inserted as new entries tied to the current user's JWT context. The UI alerts the user once the batch is flushed and automatically refreshes their history listing without requiring a page reload.
 
-## Validation Video
-
-Please review the attached session to see me acting as the LLM interface testing the Application, viewing inputs, and loading the PDF screens sequentially!
-
-![Browser Recording](./media/calorie_tracker_walkthrough_1771784388459.webp)
