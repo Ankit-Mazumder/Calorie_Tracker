@@ -1,6 +1,6 @@
 # AI Calorie & Nutrition Tracker
 
-A modern, full-stack web application for tracking personal health goals and nutrition, powered by AI.
+A modern, full-stack web application for tracking personal health goals and nutrition, powered by AI. **Note: For the specialized AI Agent and Image Scanning features to work flawlessly, you must provide a Google Gemini API Key in the `.env` file or `config.json`.**
 
 ## Validation Video
 
